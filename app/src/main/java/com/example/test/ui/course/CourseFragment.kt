@@ -21,11 +21,11 @@ class CourseFragment : Fragment() {
     ): View? {
         courseViewModel =
             ViewModelProviders.of(this).get(CourseViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        return inflater.inflate(R.layout.fragment_course, container, false)
+        /*val textView: TextView = root.findViewById(R.id.tv_course)
         courseViewModel.text.observe(this, Observer {
             textView.text = it
         })
-        return root
+        return root*/
     }
 }

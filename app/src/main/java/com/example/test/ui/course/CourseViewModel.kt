@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class CourseViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Course Page"
+        value = ""
     }
     val text: LiveData<String> = _text
 }
